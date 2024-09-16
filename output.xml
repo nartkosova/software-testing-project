@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.5 on win32)" generated="2024-09-16T15:41:26.929484" rpa="false" schemaversion="5">
+<suite id="s1" name="Testcase1" source="c:\Users\nartk\OneDrive\Documents\Module_1_S3\Software_Testing_Project\software-testing-project\TestCases\testcase1.robot">
+<test id="s1-t1" name="TC_UI_1 - Verify Tietokoneet has a landing page" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-16T15:41:27.197712" level="INFO">Opening browser 'Chrome' to base url 'http://jimms.fi'.</msg>
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<arg>options=add_argument("disable-search-engine-choice-screen"); add_experimental_option("detach", True)</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-16T15:41:27.197712" elapsed="2.888442"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-09-16T15:41:30.087162" elapsed="0.169067"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-16T15:41:30.758853" level="INFO">Slept 500 milliseconds.</msg>
+<arg>0.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-16T15:41:30.257230" elapsed="0.502735"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-16T15:41:30.761865" level="INFO">Clicking element 'xpath:/html/body/header/div/div[1]/jim-drilldown-mega-menu/nav/ul/li[1]/a'.</msg>
+<arg>xpath:/html/body/header/div/div[1]/jim-drilldown-mega-menu/nav/ul/li[1]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-16T15:41:30.760861" elapsed="0.184257"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-16T15:41:31.447726" level="INFO">Slept 500 milliseconds.</msg>
+<arg>0.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-16T15:41:30.946115" elapsed="0.502170"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-09-16T15:41:31.450317" level="INFO">Clicking link 'xpath:/html/body/header/div/div[1]/jim-drilldown-mega-menu/nav/ul/li[1]/div/ul/li[1]/a'.</msg>
+<arg>xpath:/html/body/header/div/div[1]/jim-drilldown-mega-menu/nav/ul/li[1]/div/ul/li[1]/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-16T15:41:31.450317" elapsed="0.506255"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-09-16T15:41:31.985520" level="INFO">Current page contains text 'Tietokoneet'.</msg>
+<arg>Tietokoneet</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-09-16T15:41:31.957569" elapsed="0.027951"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-16T15:41:34.986871" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-16T15:41:31.985520" elapsed="3.002514"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-09-16T15:41:35.322716" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-09-16T15:41:34.988889" elapsed="0.334828"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-16T15:41:36.327292" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-16T15:41:35.325741" elapsed="1.002203"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-16T15:41:36.332081" level="INFO">Clicking element 'xpath:/html/body/header/div/div[1]/jim-drilldown-mega-menu/nav/ul/li[2]/a'.</msg>
+<arg>xpath:/html/body/header/div/div[1]/jim-drilldown-mega-menu/nav/ul/li[2]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-16T15:41:36.331087" elapsed="0.507248"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-16T15:41:37.341147" level="INFO">Slept 500 milliseconds.</msg>
+<arg>0.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-16T15:41:36.839860" elapsed="0.502415"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-09-16T15:41:37.345423" level="INFO">Clicking link 'xpath:/html/body/header/div/div[1]/jim-drilldown-mega-menu/nav/ul/li[2]/div/ul/li[1]/a'.</msg>
+<msg time="2024-09-16T15:41:37.890035" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-09-16T15:41:37.891036" level="FAIL">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=128.0.6613.138)
+Stacktrace:
+	GetHandleVerifier [0x00007FF757539412+29090]
+	(No symbol) [0x00007FF7574AE239]
+	(No symbol) [0x00007FF75736B009]
+	(No symbol) [0x00007FF7573C0442]
+	(No symbol) [0x00007FF7573B2D81]
+	(No symbol) [0x00007FF7573E66EA]
+	(No symbol) [0x00007FF7573B26C6]
+	(No symbol) [0x00007FF7573E6900]
+	(No symbol) [0x00007FF7574065A2]
+	(No symbol) [0x00007FF7573E6493]
+	(No symbol) [0x00007FF7573B09D1]
+	(No symbol) [0x00007FF7573B1B31]
+	GetHandleVerifier [0x00007FF75785871D+3302573]
+	GetHandleVerifier [0x00007FF7578A4243+3612627]
+	GetHandleVerifier [0x00007FF75789A417+3572135]
+	GetHandleVerifier [0x00007FF7575F5EB6+801862]
+	(No symbol) [0x00007FF7574B945F]
+	(No symbol) [0x00007FF7574B4FB4]
+	(No symbol) [0x00007FF7574B5140]
+	(No symbol) [0x00007FF7574A461F]
+	BaseThreadInitThunk [0x00007FFBD954257D+29]
+	RtlUserThreadStart [0x00007FFBDAC6AF28+40]
+</msg>
+<arg>xpath:/html/body/header/div/div[1]/jim-drilldown-mega-menu/nav/ul/li[2]/div/ul/li[1]/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="FAIL" start="2024-09-16T15:41:37.344411" elapsed="0.557756">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=128.0.6613.138)
+Stacktrace:
+	GetHandleVerifier [0x00007FF757539412+29090]
+	(No symbol) [0x00007FF7574AE239]
+	(No symbol) [0x00007FF75736B009]
+	(No symbol) [0x00007FF7573C0442]
+	(No symbol) [0x00007FF7573B2D81]
+	(No symbol) [0x00007FF7573E66EA]
+	(No symbol) [0x00007FF7573B26C6]
+	(No symbol) [0x00007FF7573E6900]
+	(No symbol) [0x00007FF7574065A2]
+	(No symbol) [0x00007FF7573E6493]
+	(No symbol) [0x00007FF7573B09D1]
+	(No symbol) [0x00007FF7573B1B31]
+	GetHandleVerifier [0x00007FF75785871D+3302573]
+	GetHandleVerifier [0x00007FF7578A4243+3612627]
+	GetHandleVerifier [0x00007FF75789A417+3572135]
+	GetHandleVerifier [0x00007FF7575F5EB6+801862]
+	(No symbol) [0x00007FF7574B945F]
+	(No symbol) [0x00007FF7574B4FB4]
+	(No symbol) [0x00007FF7574B5140]
+	(No symbol) [0x00007FF7574A461F]
+	BaseThreadInitThunk [0x00007FFBD954257D+29]
+	RtlUserThreadStart [0x00007FFBDAC6AF28+40]
+</status>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Komponentit</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2024-09-16T15:41:37.904142" elapsed="0.001102"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-09-16T15:41:37.906147" elapsed="0.000000"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" start="2024-09-16T15:41:37.908145" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-09-16T15:41:37.909141" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-09-16T15:41:37.910145" elapsed="0.001523"/>
+</kw>
+<doc>This test verifies that each product category in the nav bar has a valid landing page.</doc>
+<status status="FAIL" start="2024-09-16T15:41:27.195712" elapsed="10.717985">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=128.0.6613.138)
+Stacktrace:
+	GetHandleVerifier [0x00007FF757539412+29090]
+	(No symbol) [0x00007FF7574AE239]
+	(No symbol) [0x00007FF75736B009]
+	(No symbol) [0x00007FF7573C0442]
+	(No symbol) [0x00007FF7573B2D81]
+	(No symbol) [0x00007FF7573E66EA]
+	(No symbol) [0x00007FF7573B26C6]
+	(No symbol) [0x00007FF7573E6900]
+	(No symbol) [0x00007FF7574065A2]
+	(No symbol) [0x00007FF7573E6493]
+	(No symbol) [0x00007FF7573B09D1]
+	(No symbol) [0x00007FF7573B1B31]
+	GetHandleVerifier [0x00007FF75785871D+3302573]
+	GetHandleVerifier [0x00007FF7578A4243+3612627]
+	GetHandleVerifier [0x00007FF75789A417+3572135]
+	GetHandleVerifier [0x00007FF7575F5EB6+801862]
+	(No symbol) [0x00007FF7574B945F]
+	(No symbol) [0x00007FF7574B4FB4]
+	(No symbol) [0x00007FF7574B5140]
+	(No symbol) [0x00007FF7574A461F]
+	BaseThreadInitThunk [0x00007FFBD954257D+29]
+	RtlUserThreadStart [0x00007FFBDAC6AF28+40]
+</status>
+</test>
+<status status="FAIL" start="2024-09-16T15:41:26.934484" elapsed="10.994336"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Testcase1">Testcase1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
