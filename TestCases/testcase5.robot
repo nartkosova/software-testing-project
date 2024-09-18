@@ -3,7 +3,8 @@ Library    SeleniumLibrary
 
 *** Variables ***
 ${URL}    http://jimms.fi
-${path}    xpath=//addto-cart-wrapper//a
+${addToCart}    xpath=//addto-cart-wrapper//a
+${shoppingCart}    xpath=//a[@href="/fi/ShoppingCart"]
 
 *** Test Cases ***
 TC_UI_3 - Find 'Lisää koriin' button
@@ -16,11 +17,15 @@ TC_UI_3 - Find 'Lisää koriin' button
     Sleep    0.5s
     Click Element     xpath:/html/body/header/div/div[1]/jim-drilldown-mega-menu/nav/ul/li[1]/div/ul/li[1]/a  
 
-    Wait Until Page Contains Element    ${path}    timeout=4s
-    Scroll Element Into View    ${path}
-    Element Should Be Visible    ${path}
+    Wait Until Page Contains Element    ${addToCart}    timeout=4s
+    Scroll Element Into View    ${addToCart}
+    Element Should Be Visible    ${addToCart}
+    Click Element    ${addToCart}
 
     Sleep    2s
+    Click Element    ${shoppingCart}  
+    Wait Until Element Is Visible    ${shoppingCart}  
+    Sleep    0.2s 
     Capture Page Screenshot   
 
 
