@@ -7,8 +7,7 @@ ${addToCart}    xpath=//addto-cart-wrapper//a
 ${shoppingCart}    xpath=//a[@href="/fi/ShoppingCart"]
 
 *** Test Cases ***
-TC_UI_3 - Find 'Lisää koriin' button
-    [Documentation]    This test navigates to a product page and finds 'Lisää koriin' button.
+TC_UI_5 - Verify add to cart works
     Open Browser    ${URL}    Chrome
     ...    options=add_argument("disable-search-engine-choice-screen"); add_experimental_option("detach", True)
     Maximize Browser Window
