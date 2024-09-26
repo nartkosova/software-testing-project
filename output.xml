@@ -1,102 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.12.5 on win32)" generated="2024-09-18T10:28:25.548925" rpa="false" schemaversion="5">
-<suite id="s1" name="Testcase5" source="c:\Users\nartk\OneDrive\Documents\Module_1_S3\Software_Testing_Project\software-testing-project\TestCases\testcase5.robot">
-<test id="s1-t1" name="TC_UI_3 - Find 'Lisää koriin' button" line="10">
+<robot generator="Robot 7.0.1 (Python 3.12.5 on win32)" generated="2024-09-19T13:47:37.631615" rpa="false" schemaversion="5">
+<suite id="s1" name="Testcase7" source="C:\Users\cheoc\OneDrive\Desktop\Robot\software-testing-project\TestCases\testcase7.robot">
+<test id="s1-t1" name="TC_UI_7 - Verify the product has a price" line="10">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-09-18T10:28:25.890002" level="INFO">Opening browser 'Chrome' to base url 'http://jimms.fi'.</msg>
+<msg time="2024-09-19T13:47:37.785153" level="INFO">Opening browser 'Chrome' to base url 'http://jimms.fi'.</msg>
 <arg>${URL}</arg>
 <arg>Chrome</arg>
 <arg>options=add_argument("disable-search-engine-choice-screen"); add_experimental_option("detach", True)</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-09-18T10:28:25.890002" elapsed="2.721770"/>
+<status status="PASS" start="2024-09-19T13:47:37.784025" elapsed="2.235158"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-19T13:47:40.520768" level="INFO">Slept 500 milliseconds.</msg>
+<arg>0.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-19T13:47:40.020182" elapsed="0.500586"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-09-18T10:28:28.612777" elapsed="0.238540"/>
+<status status="PASS" start="2024-09-19T13:47:40.521783" elapsed="0.214980"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-09-18T10:28:30.853551" level="INFO">Slept 2 seconds.</msg>
+<msg time="2024-09-19T13:47:42.737197" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-09-18T10:28:28.852913" elapsed="2.001647"/>
+<status status="PASS" start="2024-09-19T13:47:40.736763" elapsed="2.000434"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-09-18T10:28:30.857510" level="INFO">Clicking element 'xpath:/html/body/header/div/div[1]/jim-drilldown-mega-menu/nav/ul/li[1]/a'.</msg>
+<msg time="2024-09-19T13:47:42.740014" level="INFO">Clicking element 'xpath:/html/body/header/div/div[1]/jim-drilldown-mega-menu/nav/ul/li[1]/a'.</msg>
 <arg>xpath:/html/body/header/div/div[1]/jim-drilldown-mega-menu/nav/ul/li[1]/a</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-18T10:28:30.856556" elapsed="0.148719"/>
+<status status="PASS" start="2024-09-19T13:47:42.739020" elapsed="0.088692"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-09-18T10:28:31.507124" level="INFO">Slept 500 milliseconds.</msg>
+<msg time="2024-09-19T13:47:43.329740" level="INFO">Slept 500 milliseconds.</msg>
 <arg>0.5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-09-18T10:28:31.005275" elapsed="0.502366"/>
+<status status="PASS" start="2024-09-19T13:47:42.829172" elapsed="0.500568"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-09-18T10:28:31.508670" level="INFO">Clicking element 'xpath:/html/body/header/div/div[1]/jim-drilldown-mega-menu/nav/ul/li[1]/div/ul/li[1]/a'.</msg>
+<msg time="2024-09-19T13:47:43.331820" level="INFO">Clicking element 'xpath:/html/body/header/div/div[1]/jim-drilldown-mega-menu/nav/ul/li[1]/div/ul/li[1]/a'.</msg>
 <arg>xpath:/html/body/header/div/div[1]/jim-drilldown-mega-menu/nav/ul/li[1]/div/ul/li[1]/a</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-18T10:28:31.508670" elapsed="0.555191"/>
-</kw>
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>${path}</arg>
-<arg>timeout=4s</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2024-09-18T10:28:32.064957" elapsed="0.030320"/>
-</kw>
-<kw name="Scroll Element Into View" owner="SeleniumLibrary">
-<arg>${path}</arg>
-<doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" start="2024-09-18T10:28:32.096610" elapsed="0.327362"/>
-</kw>
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-09-18T10:28:32.457150" level="INFO">Element 'xpath=//addto-cart-wrapper//a' is displayed.</msg>
-<arg>${path}</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-09-18T10:28:32.425794" elapsed="0.032356"/>
+<status status="PASS" start="2024-09-19T13:47:43.330696" elapsed="0.349930"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-09-18T10:28:32.459155" level="INFO">Clicking element 'xpath=//addto-cart-wrapper//a'.</msg>
-<arg>${path}</arg>
+<msg time="2024-09-19T13:47:43.680626" level="INFO">Clicking element 'xpath:/html/body/main/div[2]/div/div[2]/div[4]/div/div[1]/product-box/div[2]/div[1]/a/div/img'.</msg>
+<arg>xpath:/html/body/main/div[2]/div/div[2]/div[4]/div/div[1]/product-box/div[2]/div[1]/a/div/img</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-18T10:28:32.459155" elapsed="0.062420"/>
+<status status="PASS" start="2024-09-19T13:47:43.680626" elapsed="0.472301"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-09-18T10:28:34.524758" level="INFO">Slept 2 seconds.</msg>
+<msg time="2024-09-19T13:47:45.154548" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-19T13:47:44.152927" elapsed="1.001621"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-09-19T13:47:45.172654" level="INFO">Current page contains element 'xpath:/html/body/main/div[1]/div[2]/div/jim-product-cta-box/div/div[4]/div[1]/div[1]/span/span/span'.</msg>
+<arg>xpath:/html/body/main/div[1]/div[2]/div/jim-product-cta-box/div/div[4]/div[1]/div[1]/span/span/span</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-09-19T13:47:45.156597" elapsed="0.016057"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-19T13:47:47.173692" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-09-18T10:28:32.523094" elapsed="2.001664"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-09-18T10:28:34.526721" level="INFO">Clicking element 'xpath=//a[@href="/fi/ShoppingCart"]'.</msg>
-<arg>${shoppingCart}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-09-18T10:28:34.525721" elapsed="0.601331"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${shoppingCart}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-09-18T10:28:35.129052" elapsed="0.057242"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-09-18T10:28:35.389485" level="INFO">Slept 200 milliseconds.</msg>
-<arg>0.2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-09-18T10:28:35.188293" elapsed="0.202309"/>
-</kw>
-<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2024-09-18T10:28:35.628127" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2024-09-18T10:28:35.393123" elapsed="0.236003"/>
+<status status="PASS" start="2024-09-19T13:47:45.173358" elapsed="2.000334"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-09-18T10:28:35.630126" elapsed="2.409794"/>
+<status status="PASS" start="2024-09-19T13:47:47.174823" elapsed="2.432601"/>
 </kw>
-<doc>This test navigates to a product page and finds 'Lisää koriin' button.</doc>
-<status status="PASS" start="2024-09-18T10:28:25.888019" elapsed="12.155419"/>
+<status status="PASS" start="2024-09-19T13:47:37.784025" elapsed="11.824297"/>
 </test>
-<status status="PASS" start="2024-09-18T10:28:25.554344" elapsed="12.493127"/>
+<status status="PASS" start="2024-09-19T13:47:37.632499" elapsed="11.977261"/>
 </suite>
 <statistics>
 <total>
@@ -105,7 +83,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Testcase5">Testcase5</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Testcase7">Testcase7</stat>
 </suite>
 </statistics>
 <errors>
