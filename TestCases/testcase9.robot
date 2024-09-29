@@ -27,5 +27,6 @@ TC_UI_9 - Newsletter functionality
     Click Element    ${newsletter_confirm}
     #This confirms that Newsletter subscription was received
     Page Should Contain    Uutiskirjeen tilaus vastaanotettu.
+    Capture Page Screenshot
     Sleep    2s
     Close Browser

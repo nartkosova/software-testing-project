@@ -18,11 +18,13 @@ TC_UI_7 - Color mode switching
     Click Element    ${switch_button}
     Wait Until Element Is Visible    ${switch_light}
     Click Element    ${switch_light}
+    Capture Page Screenshot
     Sleep    1s
 
     Click Element    ${switch_button}
     Wait Until Element Is Visible    ${switch_dark}
     Click Element    ${switch_dark}
+    Capture Page Screenshot
     Sleep    1s
 
     Click Element    ${switch_button}
