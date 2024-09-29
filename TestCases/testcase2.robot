@@ -15,14 +15,15 @@ TC_UI_2 - Search functionality and verification of product page
     Execute JavaScript    document.querySelector('form').submit();
 
     Wait Until Location Contains   /fi/Product/Search?q=ps5
-    Wait Until Element Is Visible    xpath=//span[@data-bind='text: Name' and contains(text(), 'EK-QuantumX CoolingStation Monoblock for PS5, vesiblokki PS5-konsolille')] 
-    Click Element    xpath=//span[@data-bind='text: Name' and contains(text(), 'EK-QuantumX CoolingStation Monoblock for PS5, vesiblokki PS5-konsolille')]
+    Sleep    1s
+    Wait Until Element Is Visible    xpath=/html/body/main/div[2]/div/div[2]/div[5]/div/div[1]/product-box/div[2]/div[2]/h5/a/span
+    Click Element    xpath=/html/body/main/div[2]/div/div[2]/div[5]/div/div[1]/product-box/div[2]/div[2]/h5/a/span
 
-    Wait Until Location Contains   /fi/Product/Show/196297/3831109907993/ek-waterblocks-ek-quantumx-coolingstation-monoblock-for-ps5-vesiblokki-ps5-konsolille
-    Wait Until Element Is Visible    xpath=//img[@src='//ic.jimms.fi/product/0/2/462807-ig800gg.jpg']
+    Wait Until Location Contains   /fi/Product/Show/199044/1000040194/sony-ps5-dualsense-midnight-black-langaton-peliohjain
+    Wait Until Element Is Visible    xpath=/html/body/main/div[1]/div[2]/div[1]/jim-product-gallery/div/div[2]/section/div/div/div[1]/img
 
     #Im not sure if I should take screenshot of the whole product box, or just an image
-    Capture Element Screenshot    xpath=//img[@src='//ic.jimms.fi/product/0/2/462807-ig800gg.jpg']
+    Capture Element Screenshot    xpath=/html/body/main/div[1]/div[2]/div[1]/jim-product-gallery/div/div[2]/section/div/div/div[1]/img
     Sleep    0.5s
 
     #This one is case sensitive, there is no "ps5" - only "PS5" - I had to change it in order to pass the test
@@ -35,4 +36,3 @@ TC_UI_2 - Search functionality and verification of product page
 
 #Bugs
 #Search button doesen't work - it does nothing
-# Not really a bug - but similar products are not really similar, they are just random cooling backplates from the same company - not ps5 related
