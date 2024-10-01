@@ -33,3 +33,4 @@ TC_UI_8 - Verify the registration form is working
     Click Button    //*[@id="pf-GDPR"]
     Sleep    1s
     Capture Element Screenshot    xpath:/html/body/main/div/div[2]/div[2]/div/div
+    Close Browser
